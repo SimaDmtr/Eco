@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Эко</title>
+    <title>Title</title>
 </head>
 <body>
-<!--Шапка сайта -->
 <header>
     <div class="container">
         <div class="left">
@@ -38,26 +37,61 @@
 <div class="container">
     <div class="content">
         <ul class="breadcrumbs">
-            <li><a href="">Главная</a></li>
-            <li><a href="">Новости/</a></li>
-            <li>Заголовок новости</li>
+            <li><a href="">Главная/</a></li>
+            <li><a href="">Корзина/</a></li>
+            <li>Оформление заказа</li>
         </ul>
-        <h2>Новости</h2>
-        <h3>Заголовок новости №1</h3>
-        <span>27  Сентября  2015</span>
-        <div>
+        <p>Для расчёта заказа заполните форму ниже, или позвоните нам 8(495)648-8-456</p>
+        <form action="">
+            <fieldset>
+                <label for="name">Название организации</label>
+                <input type="text" id="name">
+            </fieldset>
+            <fieldset>
+                <label for="face">Контактное лицо</label>
+                <input type="text" id="face">
+            </fieldset>
+            <fieldset>
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone">
+            </fieldset>
+            <fieldset>
+                <span>Нанесение логотипа</span>
+                <span>занимает 20 рабочих дней</span>
+                <ul>
+                    <li>
+                        <label for="yes">Да</label>
+                        <input type="radio" name="logo" id="yes">
+                    </li>
+                    <li>
+                        <label for="no">Нет</label>
+                        <input type="radio" name="logo" id="no">
+                    </li>
+                </ul>
 
-        </div>
-        <div>
-            <p>Когда речь идет о галактиках, атомное время выслеживает эффективный диаметp. Засветка неба, несмотря на внешние воздействия, жизненно меняет радиант. Перигей, после осторожного анализа, недоступно выбирает метеорный дождь.</p>
-            <p>Засветка неба, в первом приближении, вероятна. Сарос решает поперечник. Магнитное поле колеблет первоначальный математический горизонт. Спектральный класс решает терминатор. Все известные астероиды имеют прямое движение, при этом параллакс колеблет астероид. Декретное время параллельно.
-            </p>
-            <p>Реликтовый ледник решает близкий спектральный класс. Узел, как бы это ни казалось парадоксальным, гасит метеорит, хотя галактику в созвездии Дракона можно назвать карликовой. Полнолуние, несмотря на внешние воздействия, вызывает перигей. Зенитное часовое число, на первый взгляд, постоянно. Перигей, как бы это ни казалось парадоксальным, перечеркивает зенит. Когда речь идет о галактиках, Южный Треугольник вызывает космический перигелий.</p>
-            <a href="">Остальные новости</a>
-        </div>
+
+            </fieldset>
+            <fieldset>
+                <label for="file">Прикрепите логотип</label>
+                <input type="file" id="file">
+            </fieldset>
+            <label for="num">Количество фигурок</label>
+            <select name="" id="num">
+                <option value="">150</option>
+                <option value="">100</option>
+                <option value="">50</option>
+            </select>
+            <fieldset>
+            <span>Подготовить заказ к</span>
+            </fieldset>
+            <fieldset>
+                <label for="more">Дополнительная информация</label>
+            <textarea name="" id="more" cols="30" rows="10"></textarea>
+            </fieldset>
+            <button>Отправить</button>
+        </form>
     </div>
 </div>
-<!--Футер-->
 <footer>
     <div class="container">
         <ul>
