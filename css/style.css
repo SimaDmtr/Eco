@@ -191,3 +191,48 @@ footer a.soc{
     grid-template-rows: repeat(4,1fr);
 
 }
+.socialItem {
+    height: 400px;
+    width: 290px;
+}
+.socialItem2 {
+    height: 400px;
+    width: 350px;
+}
+.breadcrumbs *{
+    color: #999999;
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+}
+.newsTitle h2 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.newsTitle h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+.newsTitle span {
+    color: #999999;
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+}
+.newsContent p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.newsContent a {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
+}
+.newsImage {
+    height: 150px;
+    width: 980px;
+}
