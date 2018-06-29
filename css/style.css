@@ -16,6 +16,11 @@ ul {
 input,button,textarea {
     font-family: "Open Sans";
 }
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 .container {
     width: 1010px;
     margin: 0 auto;
@@ -72,6 +77,10 @@ header .login [class*="icon"] {
 header .phone [class*="icon"] {
     font-size: 20px;
 }
+.advantages .item {
+    float: left;
+    width: 25%;
+}
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
@@ -82,6 +91,10 @@ header .phone [class*="icon"] {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+}
+.advantages{
+    width: calc(100% - 320px);
+    float: left;
 }
 .subscribe label {
     font-size: 16px;
@@ -106,6 +119,8 @@ header .phone [class*="icon"] {
 }
 .subscribe {
     background-color: #64ba4a;
+    width: 320px;
+    float: left;
 }
 .filter li {
     font-size: 13px;
@@ -173,6 +188,27 @@ footer a{
 footer a.soc{
     font-size: 21px;
 }
+footer  a.soc{
+    margin-left: 12px;
+}
+.menuFooter>li{
+    display: block;
+    float: left;
+    width: 50%;
+}
+footer .container>*{
+    display: block;
+    float: left;
+    width: 50%;
+}
+footer .footerInfo>*{
+    display: block;
+    float: left;
+    width: 50%;
+}
+footer{
+    padding: 33px 0 26px;
+}
 .sale {
     width: 305px;
     height: 360px;
@@ -184,12 +220,6 @@ footer a.soc{
 .catalog .card .img {
     width: 220px;
     height: 220px;
-}
-.cards {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-
 }
 .socialItem {
     height: 400px;
@@ -235,4 +265,55 @@ footer a.soc{
 .newsImage {
     height: 150px;
     width: 980px;
+}
+fieldset{
+    border: none;
+}
+.socials h2{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 600;
+}
+.order h2{
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+select{
+    font-family: "Open Sans";
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+.order label{
+    font-style: italic;
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+.order fieldset span{
+    font-size: 15px;
+    line-height: 22px;
+    color: #666666;
+    font-weight: 600;
+}
+input[type="radio"]+label{
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+    font-style: normal;
+}
+.order p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+.delivery  p>span {
+    color: #f26522;
+    font-size: 12px;
+    line-height: 18px;
+}
+.order label>span{
+    color: #ed1c24;
 }
