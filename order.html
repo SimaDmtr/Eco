@@ -58,20 +58,20 @@
             <fieldset>
                 <span>Способ доставки</span>
                 <ul class="delivery">
-                    <li><input type="radio" name="delivery" id="courier"><label for="courier">Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</label>
+                    <li><input type="radio" name="delivery" class="radioBtn" id="courier"><label for="courier">Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</label>
                         <p>Заказ оформленный:
                             - до 16:00 будет доставлен на следующий рабочий день;
                             - после 16:00 будет доставлен через один рабочий день;</p>
                     </li>
-                    <li><input type="radio" name="delivery" id="express"><label for="express">Экспресс-доставка   450 р.
+                    <li><input type="radio" name="delivery" class="radioBtn" id="express"><label for="express">Экспресс-доставка   450 р.
                     </label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</p>
                     </li>
-                    <li><input type="radio" name="delivery" id="present"><label for="present">Доставить в подарок   450 р.
+                    <li><input type="radio" name="delivery" class="radioBtn" id="present"><label for="present">Доставить в подарок   450 р.
                     </label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. <span>Дополнительная услуга — подарочная упаковка</span></p>
                     </li>
-                    <li><input type="radio" name="delivery" id="pickup"><label for="pickup">Самовывоз из пункта выдачи заказов   0 р.</label>
+                    <li><input type="radio" name="delivery" class="radioBtn" id="pickup"><label for="pickup">Самовывоз из пункта выдачи заказов   0 р.</label>
                         <p>1-2 рабочих дня.</p>
                     </li>
                 </ul>
@@ -93,13 +93,13 @@
             </fieldset>
             <fieldset class="payment">
                 <span>Способ оплаты</span>
-                <ul>
-                    <li><input type="radio"><label for="">Оплата при получении
+                <ul class="delivery">
+                    <li><input type="radio" class="radioBtn" id="cash" name="payment"><label for="cash" >Оплата при получении
                     </label>
                         <p>Вы сможете оплатить стоимость заказа наличными
                             при получении заказа от курьера.</p>
                     </li>
-                    <li><input type="radio"><label for="">Оплата электронным способом (Робокасса)</label>
+                    <li><input type="radio" class="radioBtn" id="web" name="payment"><label for="web">Оплата электронным способом (Робокасса)</label>
                         <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
                     </li>
                 </ul>
