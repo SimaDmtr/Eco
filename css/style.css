@@ -330,14 +330,20 @@ footer{
 .sale {
     width: 305px;
     height: 360px;
+    background-size: cover;
+    background-position: center;
 }
 .slider {
     width: 640px;
     height: 360px;
+    background-size: cover;
+    background-position: center;
 }
 .catalog .card .img {
     width: 100%;
     height: 220px;
+    background-size: cover;
+    background-position: center;
 }
 .socialItem {
     height: 400px;
@@ -500,4 +506,46 @@ header .phone:hover{
 }
 .subscribe input:focus{
     border: 1px solid #64ba4a;
+}
+
+@media (max-width: 1199px){
+    .container{
+        width: 950px;
+        padding: 0;
+    }
+    .sale{
+        height: 350px;
+        width: 295px;
+    }
+    .slider{
+        height: 350px;
+        width: 625px;
+    }
+    .advantages{
+        width: 650px;
+    }
+    .subscribe{
+        width: 300px;
+    }
+    .card img{
+        height: 215px;
+    }
+    .socials{
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .container{
+        width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+
 }
