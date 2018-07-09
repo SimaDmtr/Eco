@@ -1,10 +1,14 @@
 *,*:before,*:after{
     box-sizing: border-box;
 }
-
+html{
+    background-color: #64ba4a;
+}
 body {
-    margin: 0 auto;
+    margin: 15px auto;
     font-family: "Open Sans";
+    background-color: #ffffff;
+
 }
 input{
     outline: none;
@@ -67,6 +71,8 @@ header .phone {
     line-height: 20px;
     color: #333333;
     text-decoration: none;
+    display: block;
+
 }
 header .callback{
     font-size: 12px;
@@ -92,6 +98,7 @@ header .basket{
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
+    margin-top: 20px!important;
 }
 header .basket span{
     color: #1a9547;
@@ -109,6 +116,9 @@ header .phone [class*="icon"] {
     display: table-cell;
     width: 100%;
 }
+.headWrap .left{
+    padding-top: 25px;
+}
 .headWrap>*{
     display: table-cell;
     width: 33.3333%;
@@ -116,10 +126,45 @@ header .phone [class*="icon"] {
 }
 .headWrap .logo{
     text-align: center;
+    padding-top: 15px;
+}
+.headWrap .right{
+    padding-top: 25px;
+    text-align: right;
+    width: 33%;
+}
+.headWrap .right>*+*{
+    margin-top: 10px;
+}
+.headWrap
+header .login:hover{
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: none;
+}
+header .phone:hover{
+    color: #179547;
+    border-bottom: 1px solid #179547;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .advantages .item {
     float: left;
     width: 25%;
+    text-align: left;
+}
+.advantages .item>*{
+    display: block;
+}
+.advantages .item>span{
+    margin-top: 20px;
+}
+.advantages .item>p{
+    margin-top: 15px;
 }
 .advantages .item span {
     font-size: 14px;
@@ -135,15 +180,24 @@ header .phone [class*="icon"] {
 .advantages{
     width: calc(100% - 320px);
     float: left;
+    height: 162px;
+    margin-top: 28px;
+}
+.subscribe form {
+    margin: 18px;
 }
 .subscribe label {
     font-size: 16px;
     color: #ffffff;
+
 }
 .subscribe input {
     font-size: 13px;
     line-height: 37px;
     color: #999999;
+    margin-top:20px ;
+    width: 280px;
+
 }
 .subscribe button {
     font-size:  13px;
@@ -155,10 +209,14 @@ header .phone [class*="icon"] {
     display: table-cell;
     vertical-align: middle;
     width: 188px;
+    margin-top: 14px;
 }
 .subscribe .wrap {
     display: table;
     width: 100%;
+}
+.subscribe .wrap span{
+    padding-left: 20px ;
 }
 .subscribe .wrap span {
     font-size: 13px;
@@ -170,6 +228,10 @@ header .phone [class*="icon"] {
     background-color: #64ba4a;
     width: 320px;
     float: left;
+    margin-top: 28px;
+}
+.filter {
+    margin-top: 30px;
 }
 .filter li {
     font-size: 13px;
@@ -178,7 +240,7 @@ header .phone [class*="icon"] {
     display: inline-block;
 }
 .filter li+li{
-    padding-left: 20px;
+    margin-left: 20px;
 }
 .filter li a {
     text-decoration: none;
@@ -192,6 +254,13 @@ header .phone [class*="icon"] {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
+    margin-top: 33px;
+}
+.card .name{
+    margin-top: 20px;
+}
+.card a+div{
+    margin-top: 20px;
 }
 .card button{
     background-color: #ff7200;
@@ -204,6 +273,7 @@ header .phone [class*="icon"] {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    margin-left: 33px;
 }
 .card button:hover{
     background-color: #ffffff;
@@ -245,6 +315,7 @@ header .phone [class*="icon"] {
     font-weight: 600;
     line-height: 30px;
     color: #333333;
+    vertical-align: bottom;
 }
 .card .price .old{
     font-size: 14px;
@@ -252,24 +323,39 @@ header .phone [class*="icon"] {
     line-height: 16px;
     text-decoration: line-through;
     color: #666666;
+    margin-right: 10px;
+}
+.socials {
+    text-align: center;
+    margin-top: 64px;
 }
 .social h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    text-align: center;
-    color: #666666;
+
+    color: #666666;;
 }
 .socials>div{
     display: flex;
     justify-content: space-between;
+    margin-top: 90px;
 
 }
+.tabs li{
+    display: inline-block;
+    margin: 37px 0;
+}
+
 .tabs li a{
     font-size: 14px;
     text-decoration: none;
-    line-height: 45px;
+    padding: 14px 12px;
     color: #999999;
+}
+.tabs li a:hover{
+    background-color: #f2fff7;
+    color: #1c9847;
 }
 .info .content {
     font-size: 12px;
@@ -279,6 +365,12 @@ header .phone [class*="icon"] {
 .info .title {
     text-transform: uppercase;
     position: relative;
+}
+.content .title+div{
+    padding: 25px 15px;
+}
+.content p+p{
+    margin-top: 20px;
 }
 .info .title:after  {
     content: '';
@@ -325,6 +417,7 @@ footer{
 .banner{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .sale {
@@ -339,7 +432,7 @@ footer{
     background-size: cover;
     background-position: center;
 }
-.catalog .card .img {
+.card .img {
     width: 100%;
     height: 220px;
     background-size: cover;
@@ -358,6 +451,8 @@ footer{
     font-size: 12px;
     line-height: 22px;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 .newsTitle h2 {
     font-size: 25px;
@@ -380,16 +475,23 @@ footer{
     font-size: 13px;
     line-height: 19px;
     color: #333333;
+    margin: 20px 0;
 }
 .newsContent a {
     font-size: 13px;
     line-height: 22px;
     color: #0069b4;
 }
-.newsImage {
+.newsTitle h3{
+    margin-top: 50px;
+}
+.newsContent .newsImage{
+    margin-top: 17px;
     height: 150px;
     width: 980px;
 }
+
+
 fieldset{
     border: none;
 }
@@ -403,6 +505,7 @@ fieldset{
     line-height: 22px;
     font-weight: 600;
     color: #333333;
+
 }
 select{
     font-family: "Open Sans";
@@ -489,24 +592,152 @@ input[type="radio"]+label{
 .radioBtn+label{
     cursor: pointer;
 }
-header .login:hover{
-    text-decoration: none;
-}
-.menu a:hover{
-    text-decoration: none;
-}
-header .phone:hover{
-    color: #179547;
-    border-bottom: 1px solid #179547;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
+
 .subscribe input:focus{
     border: 1px solid #64ba4a;
 }
+.corpWrapper{
+    margin-bottom: 25px;
+}
+.corpLeft{
+    color: #666666;
+    margin-right: 33px;
+}
+.corpRight p{
+    color: #333333;
+    font-size: 13px;
+    line-height: 22px;
+}
+.corpRight p+p{
+    margin-top: 32px;
+}
+.corpRight h2+p{
+    margin-top: 17px;
+}
+
+.corpRight h2{
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpLeft form{
+    background-color: #f9f9f9;
+    padding: 24px 12px;
+    margin-top: 18px;
+}
+.corpLeft{
+    width: 307px;
+    float: left;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.corpLeft label {
+    font-style: italic;
+    font-size: 13px;
+}
+.logoSet{
+    position: relative;
+    padding-bottom: 10px;
+
+    width: 65%;
+    float: left;
+}
+.logoSet>span{
+    color: #333333;
+}
+
+.logoYesNo label{
+    font-style: normal;
+    position: relative;
+    padding-left: 25px;
+    margin-left: -25px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.logoYesNo li{
+    padding-left: 25px;
+    float: left;
+}
+.corpLeft select{
+    display: block;
+}
+textarea{
+    border: 1px solid #d6d6d6;
+    display: block;
+}
+.logoSet span+span{
+    font-size: 11px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #999999;
+}
+label[for="file"] {
+    font-style: normal;
+    color: #229647;
+}
+.corpLeft button {
+    background-color: #ff7200;
+    color: #ffffff;
+    border: none;
+    height: 32px;
+    width: 130px;
+    margin-top: 22px;
+}
+.corpRight button{
+    width: 194px;
+    height: 32px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    border: none;
+    margin-top: 28px;
+}
+select[name="country"]{
+    display: block;
+}
+
+.country {
+    border-bottom: 1px solid #e4e4e4;
+}
+.delivery{
+    border-bottom: 1px solid #e4e4e4;
+}
+#street, #area,#name,#mail,#number{
+    display: block;
+}
+.addressRow div{
+    float: left;
+    width: 59px;
+    margin-right: 36px;
+}
+.addressRow input{
+    width: inherit;
+}
+.addressRow div:last-child{
+    float: left;
+    width: 106px;
+}
+.address{
+    border-bottom: 1px solid #e4e4e4;
+}
+.order fieldset span+div, .order fieldset span+ul{
+    padding: 20px 0;
+}
+.order fieldset {
+    margin: 20px 0;
+}
+.order button{
+    height: 35px;
+    width: 191px;
+    background-color: #ea5b0c;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 67px;
+}
+
 
 @media (max-width: 1199px){
     .container{
@@ -527,7 +758,7 @@ header .phone:hover{
     .subscribe{
         width: 300px;
     }
-    .card img{
+    .card .img{
         height: 215px;
     }
     .socials{
@@ -536,13 +767,57 @@ header .phone:hover{
 }
 @media (max-width: 991px) {
     .container{
-        width: 750px;
+        width: 720px;
+    }
+    .sale{
+        height: 260px;
+        width: 220px;
+    }
+    .slider{
+        height: 265px;
+        width: 470px;
+    }
+    .advantages{
+        width: 100%;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .filter{
+        display: none;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 34px;
+    }
+    .card .img{
+        height: 217px;
+        width: 217px;
     }
 }
 
 @media (max-width: 767px) {
     .container{
-        width: 100%;
+        width: 270px;
+    }
+    .banner{
+        display: none;
+    }
+    .advSub{
+        display: none;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .card .img{
+        height: 270px;
+        width: 270px;
+    }
+    .info{
+        display: none;
     }
 }
 
